@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leebros.stuyschedule.MainActivity"
+    android:background="@color/LightBlack">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:id="@+id/toolbar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="Press a Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPhysEd"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvClock"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:text="00:00:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tvClock"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.19"
+        android:textSize="80sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="End:"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.41000003" />
+
+    <TextView
+        android:text="Time Left:"
+        android:layout_width="wrap_content"
+        android:id="@+id/tvTimeLeft"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPeriod"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.55"
+        android:text="Current Period:" />
+
+    <TextView
+        android:text="Next Class:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNextClass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="25dp"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <ImageButton
+        app:srcCompat="@drawable/nohomeroom"
+        android:id="@+id/ibNoHomeroom"
+        android:scaleType="centerInside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/glHorizontal50"
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:cropToPadding="false"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="@+id/glVertical75"
+        app:layout_constraintBottom_toTopOf="@+id/glVertical95"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp" />
+
+    <ImageButton
+        app:srcCompat="@drawable/homeroom"
+        android:id="@+id/ibHomeroom"
+        android:scaleType="centerInside"
+        app:layout_constraintLeft_toLeftOf="@+id/glHorizontal50"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="@+id/glVertical75"
+        app:layout_constraintBottom_toTopOf="@+id/glVertical95"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/glVertical75"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="426dp"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/glHorizontal50"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="192dp"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/glVertical95"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="539dp"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintGuide_percent="0.95" />
+
+</android.support.constraint.ConstraintLayout>

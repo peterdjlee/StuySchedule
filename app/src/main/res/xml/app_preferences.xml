@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General">
+
+        <SwitchPreference
+            android:title="Gym Cycle"
+            android:summary="Toggle your gym cycle."
+            android:key="abSetting" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Schedule">
+
+        <EditTextPreference
+            android:defaultValue="CLass"
+            android:summary="Class input"
+            android:title="1st Period" />
+
+        <EditTextPreference
+            android:title="2nd Period"
+            android:summary="Class input"
+            android:defaultValue="Class"/>
+
+        <EditTextPreference
+            android:title="3rd Period"
+            android:summary="Class input"
+            android:defaultValue="Class"/>
+
+        <EditTextPreference
+            android:title="4th Period"
+            android:summary="Class input"
+            android:defaultValue="Class"/>
+
+        <EditTextPreference
+            android:title="5th Period"
+            android:summary="Class input"
+            android:defaultValue="Class"/>
+
+        <EditTextPreference
+            android:title="6th Period"
+            android:summary="Class input"
+            android:defaultValue="Class"/>
+
+        <EditTextPreference
+            android:title="7th Period"
+            android:summary="Class input"
+            android:defaultValue="Class"/>
+
+        <EditTextPreference
+            android:title="8th Period"
+            android:summary="Class input"
+            android:defaultValue="Class"/>
+
+        <EditTextPreference
+            android:title="9th Period"
+            android:summary="Class input"
+            android:defaultValue="Class"/>
+
+        <EditTextPreference
+            android:title="10th Period"
+            android:summary="Class input"
+            android:defaultValue="Class"/>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
